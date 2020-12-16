@@ -1,3 +1,17 @@
+/* 사진 옮겨지는거 */
+.container{
+    width: 500vw;
+    transition: transform 0.5s;
+}
+.inner{
+    width: 100vw;
+    float: left;
+    height: 800px;
+    overflow: hidden;
+}
+.inner img{
+    width: 100%;
+}
 /* 헤드 레이아웃 */
 header{
     height: 100px;
