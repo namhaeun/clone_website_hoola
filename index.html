@@ -49,11 +49,18 @@
 					</div>
 				</div>
 			</div>
+			<div class="bbb">
+				<img src="images/btn_prev.png">
+			</div>
+			<div class="ddd">
+				<img src="images/btn_next.png">
+			</div>
 			<button class="버튼1">2019.4M</button>
 			<button class="버튼2">2020.1M</button>
 			<button class="버튼3">2020.2M</button>
 			<button class="버튼4">2020.3M</button>
 			<button class="버튼5">2020.4M</button>
+			
 			<div class="inner-container2">
 				<div class="큰제목">
 					새로운 시대를 열어갈 다음 세대를 위한 새로운 학교
@@ -351,7 +358,14 @@
 		</div>
 	</div>
 	<script>
-		var p = 0
+		var tra = 0
+		document.querySelector('.bbb').addEventListener('click', function(){
+			document.querySelector('.container').style.transform = 'translate(0vw)';
+		});
+		document.querySelector('.ddd').addEventListener('click', function(){
+			tra = tra - 100
+			document.querySelector('.container').style.transform = 'translate(travw)';
+		});
 
 		document.getElementById('btn').addEventListener('click', function () {
 			if (document.getElementById('btn').style.backgroundColor == 'white') {
@@ -378,7 +392,8 @@
 			document.querySelector('.container').style.transform = 'translate(0vw)';
 		});
 		document.querySelector('.버튼2').addEventListener('click', function(){
-			document.querySelector('.container').style.transform = 'translate(-100vw)';
+			tra = tra - 100
+			document.querySelector('.container').style.transform = 'translate(tra)' + 'translate(vw)';
 		});
 		document.querySelector('.버튼3').addEventListener('click', function(){
 			document.querySelector('.container').style.transform = 'translate(-200vw)';

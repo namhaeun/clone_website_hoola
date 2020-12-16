@@ -12,6 +12,16 @@
 .inner img{
     width: 100%;
 }
+.bbb{
+    position: absolute;
+    top: 55%;
+}
+.ddd{
+    position: absolute;
+    top: 55%;
+    right: 0px;
+}
+
 /* 헤드 레이아웃 */
 header{
     height: 100px;
