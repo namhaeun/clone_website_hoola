@@ -49,11 +49,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="bbb">
-				<img src="images/btn_prev.png">
-			</div>
-			<div class="ddd">
-				<img src="images/btn_next.png">
+			<div class="slider-pages button">
+				<div class="bbb">
+					<img src="images/btn_prev.png">
+				</div>
+				<div class="ddd">
+					<img src="images/btn_next.png">
+				</div>
 			</div>
 			<button class="버튼1">2019.4M</button>
 			<button class="버튼2">2020.1M</button>
@@ -358,7 +360,7 @@
 		</div>
 	</div>
 	<script>
-
+		// 우기쌤
 		var buttons = document.querySelectorAll('#slider-pages button');
 		var currentIndex = 0;
 		buttons.forEach(function (el, i) {
@@ -378,16 +380,16 @@
 			buttons.forEach(function (el) { el.className = ''; });
 			buttons[index].className = 'active';
 		}
-
+		// 내시도
 		var tra = 0
 		document.querySelector('.bbb').addEventListener('click', function () {
 			document.querySelector('.container').style.transform = 'translate(0vw)';
 		});
 		document.querySelector('.ddd').addEventListener('click', function () {
 			tra = tra - 100
-			document.querySelector('.container').style.transform = 'translate(travw)';
+			document.querySelector('.container').style.transform = 'translate(-100vw)';
 		});
-
+		// 크리스마스에디션
 		document.getElementById('btn').addEventListener('click', function () {
 			if (document.getElementById('btn').style.backgroundColor == 'white') {
 				document.getElementById('btn').style.backgroundColor = 'green';
@@ -397,7 +399,6 @@
 				document.getElementById('btn').style.backgroundColor = 'white';
 			}
 		});
-
 		document.getElementById('christmas').addEventListener('click', function () {
 			document.getElementById('bluebox1').style.backgroundColor = '#2B5E38';
 			document.getElementById('bluebox2').style.backgroundColor = '#A2231E';
@@ -408,13 +409,13 @@
 			document.getElementById('ss').style.backgroundColor = '#2B5E38';
 			document.getElementById('iii').style.width = '380px';
 		});
-
+		// 버튼 네개
 		document.querySelector('.버튼1').addEventListener('click', function () {
 			document.querySelector('.container').style.transform = 'translate(0vw)';
 		});
 		document.querySelector('.버튼2').addEventListener('click', function () {
 			tra = tra - 100
-			document.querySelector('.container').style.transform = 'translate(tra)' + 'translate(vw)';
+			document.querySelector('.container').style.transform = 'translate(-100vw)';
 		});
 		document.querySelector('.버튼3').addEventListener('click', function () {
 			document.querySelector('.container').style.transform = 'translate(-200vw)';
